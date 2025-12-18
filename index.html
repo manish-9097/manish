@@ -1,84 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Business Platform</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background-color: #333; color: white; padding: 1rem; text-align: center; }
-        nav { background-color: #444; padding: 0.5rem; }
-        nav a { color: white; margin: 0 1rem; text-decoration: none; }
-        section { padding: 2rem; max-width: 1200px; margin: auto; }
-        .hero { background-color: #007bff; color: white; text-align: center; padding: 3rem; }
-        .services { display: flex; justify-content: space-around; flex-wrap: wrap; }
-        .service { background: white; padding: 1rem; margin: 1rem; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 30%; }
-        footer { background-color: #333; color: white; text-align: center; padding: 1rem; }
-        form { max-width: 400px; margin: auto; }
-        input, textarea { width: 100%; padding: 0.5rem; margin: 0.5rem 0; }
-        button { background-color: #007bff; color: white; padding: 0.5rem; border: none; cursor: pointer; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manish Property Dealer</title>
+
+<style>
+body{font-family:Arial;margin:0;background:#f4f4f4}
+header{background:#222;color:#fff;text-align:center;padding:20px}
+header img{border-radius:50%;margin-top:10px}
+nav{background:#444;text-align:center;padding:10px}
+nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold}
+section{padding:40px;max-width:1200px;margin:auto}
+.hero{background:#007bff;color:#fff;text-align:center}
+.services{display:flex;flex-wrap:wrap;justify-content:space-between}
+.service{background:#fff;width:30%;min-width:250px;margin:10px;padding:20px;border-radius:8px;box-shadow:0 0 10px #ccc}
+.property{background:#fff;padding:15px;margin:15px 0;border-left:5px solid #007bff}
+button{background:#007bff;color:#fff;padding:10px;border:none;cursor:pointer}
+footer{background:#222;color:#fff;text-align:center;padding:15px}
+input,textarea{width:100%;padding:8px;margin:8px 0}
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:white;padding:15px;
+border-radius:50%;font-size:20px;text-decoration:none
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <h1> MANISH THE PROPERTY DEALER
-            <img src="photo.jpg" height="250" width="250"  </h1> <p>Your gateway to innovative solutions.</p>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
 
-</body>
-</html>
-    <section id="home" class="hero">
-        <h2>Know About Deal With Your Business</h2>
-        <p>We provide cutting-edge tools and platforms to streamline your operations.</p>
-    </section>
-     <section id="services">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service">
-                
-                <a href="page1.html"><h3>Talk About bussiness</h3></a>
-                <p>Expert advice to optimize your business processes.</p>
-            </div>
-            
-            <div class="service">
-                <a href="page2.html"><h3>Development</h3></a>
-                <p>How to grow your bussiness</p>
-            </div>
-            <div class="service">
-              <a href="support.html">  <h3>Support</h3></a>
-                <p>24/7 assistance to keep your platform running smoothly.</p>
-            </div>
-        </div>
-    </section>   
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Our platform connects businesses with the resources they need to thrive in a digital world. Founded in [2020], we've helped [Over 100K] clients achieve their goals.</p>
-    </section>
+<header>
+<h1>MANISH THE PROPERTY DEALER</h1>
+<img src="photo.jpg" width="180">
+<p>Trusted Property Solutions in Bihar</p>
+</header>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2020 My Business Platform. All rights reserved.</p>
-    </footer>
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! We\'ll get back to you soon.');
-            // In a real site, integrate with a backend like EmailJS or a server to send emails.
-        });
-    </script>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#properties">Properties</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="hero">
+<h2>Buy • Sell • Rent Properties Easily</h2>
+<p>Land | House | Flat | Commercial</p>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="services">
+<div class="service">
+ <a href="page1.html"><h3>Buy Property</h3></a>
+<p>Best verified properties at fair prices.</p>
+</div>
+<div class="service">
+<a href="page2.html"><h3>Development</h3></a>
+<p>Sell faster with genuine buyers.</p>
+</div>
+<div class="service">
+    <a href="support.html"> <h3>Consultation support™</h3></a>
+<p>Legal & price guidance by experts.</p>
+</div>
+</div>
+</section>
+
+<section id="properties">
+<h2>Featured Properties</h2>
+<div class="property">
+<h3>Residential Plot – Shreepur</h3>
+<p>📍 Location: Near Pani Tanki Road Side</p>
+<p>💰 Price: ₹7.0 Lakh</p>
+</div>
+<div class="property">
+<h3>Plot 2 - Turki </h3>
+<p>📍 Near Main Road</p>
+<p>💰 Price: ₹28 Lakh</p>
+</div>
+</section>
+
+<section>
+<h2>Location</h2>
+<iframe 
+src="https://www.google.com/maps?q=Patna&output=embed" 
+width="100%" height="300" style="border:0"></iframe>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<form onsubmit="sendMsg(event)">
+<input type="text" placeholder="Name" required>
+<input type="tel" placeholder="Mobile Number" required>
+<textarea placeholder="Message" required></textarea>
+<button>Send</button>
+</form>
+</section>
+
+<footer>
+<p>© 2020 Manish Property Dealer | All Rights Reserved</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/916202426039" target="_blank">💬</a>
+
+<script>
+function sendMsg(e){
+e.preventDefault();
+alert("Message sent! We will contact you soon.");
+}
+</script>
+
 </body>
 </html>
